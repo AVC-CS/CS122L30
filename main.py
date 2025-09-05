@@ -4,18 +4,18 @@ def main():
     ##################################################
     number = int(input('Enter your input: '))
 
-    """
-    Make your code here
-    """
-
-    if result:
-        print(f'The value {number} is an odd number')
+    if number % 2 != 0:
+        result = 1
     else:
-        print(f'The value {number} is an even number')
+        result = 0
 
     ########################################
     # Do not delete the return statement
     ########################################
+    if result:
+        print(f'The value {number} is an odd number')
+    else:
+        print(f'The value {number} is an even number')
     return result
 
 
